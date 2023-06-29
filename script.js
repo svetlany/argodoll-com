@@ -16769,6 +16769,10 @@ const optionLabels = [
     
     { name: 'color', label: 'Skin color' },
     
+    { name: 'color-chibi', label: 'Human color' },
+    
+    { name: 'color-deer', label: 'Deer color' },
+    
     { name: 'breast', label: 'Breast size' },
     
     { name: 'torso', label: 'Torso' },
@@ -16785,6 +16789,8 @@ const optionLabels = [
     
     { name: 'bodytype', label: 'Body type' },
     
+    { name: 'bodytype-chibi', label: 'Body type' },
+    
     { name: 'forceps', label: 'Forceps' },
     
     { name: 'adapter', label: 'Neck adapter' },
@@ -16792,6 +16798,16 @@ const optionLabels = [
     { name: 'jewelry', label: 'Jewelry' },
     
     { name: 'outfit', label: 'Outfit' },
+    
+    { name: 'chibi-parts-a', label: 'Horns A' },
+    
+    { name: 'chibi-parts-b', label: 'Ears B' },
+    
+    { name: 'chibi-parts-c', label: 'Ears C' },
+    
+    { name: 'chibi-parts-d', label: 'Horns D' },
+    
+    { name: 'chibi-parts-e', label: 'Horns E' },
     
 ];
 
@@ -16885,6 +16901,48 @@ function calculatePrice() {
 
 
 
+
+
+
+
+
+
+
+
+
+    if ($('.item_color-chibi').val() === 'Tan')
+        price += ~~$('.color_price').text();
+
+
+
+    if ($('.item_color-chibi').val() === 'Brown')
+        price += ~~$('.color_price').text();
+
+
+
+    if ($('.item_color-chibi').val() === 'Black')
+        price += ~~$('.color_price').text();
+
+
+
+
+
+
+
+
+
+    if ($('.item_color-deer').val() === 'Tan')
+        price += ~~$('.color_price').text();
+
+
+
+    if ($('.item_color-deer').val() === 'Brown')
+        price += ~~$('.color_price').text();
+
+
+
+    if ($('.item_color-deer').val() === 'Black')
+        price += ~~$('.color_price').text();
 
 
 
@@ -17003,6 +17061,12 @@ function calculatePrice() {
 
 
 
+
+
+
+
+
+
     if ($('.item_forceps').val() === 'Yes')
         price += ~~$('.forceps_price').text();
 
@@ -17030,6 +17094,51 @@ function calculatePrice() {
 
     if ($('.item_outfit').val() === 'Yes')
         price += ~~$('.outfit_price').text();
+
+
+
+
+
+
+
+    if ($('.item_chibi-parts-a').val() === 'Yes')
+        price += ~~$('.chibi-parts_price').text();
+
+
+
+
+
+
+
+    if ($('.item_chibi-parts-b').val() === 'Yes')
+        price += ~~$('.chibi-parts_price').text();
+
+
+
+
+
+
+
+    if ($('.item_chibi-parts-c').val() === 'Yes')
+        price += ~~$('.chibi-parts_price').text();
+
+
+
+
+
+
+
+    if ($('.item_chibi-parts-d').val() === 'Yes')
+        price += ~~$('.chibi-parts_price').text();
+
+
+
+
+
+
+
+    if ($('.item_chibi-parts-e').val() === 'Yes')
+        price += ~~$('.chibi-parts_price').text();
 
 
 
