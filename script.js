@@ -16910,6 +16910,10 @@ function calculatePrice() {
 
 
 
+
+
+
+
     if ($('.item_color-chibi').val() === 'Tan')
         price += ~~$('.color_price').text();
 
