@@ -16879,6 +16879,8 @@ function calculatePrice() {
 
 
 
+
+
     if ($('.item_color').val() === 'Black')
         price += ~~$('.color_price').text();
 
@@ -16916,6 +16918,8 @@ function calculatePrice() {
 
     if ($('.item_color').val() === 'Custom')
         price += ~~$('.color_price').text();
+
+
 
 
 
