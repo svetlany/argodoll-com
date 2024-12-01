@@ -16777,6 +16777,8 @@ const optionLabels = [
     
     { name: 'torso', label: 'Torso' },
     
+    { name: 'horns', label: 'Horns' },
+    
     { name: 'fists', label: 'Fists' },
     
     { name: 'feet', label: 'Heel feet' },
@@ -16815,9 +16817,9 @@ const optionLabels = [
     
     { name: 'chibi-parts-e', label: 'Horns E' },
     
-    { name: 'skull-new-male', label: 'Skull' },
+    { name: 'skull', label: 'Skull' },
     
-    { name: 'hands-new-male', label: 'Hands' },
+    { name: 'hands', label: 'Hands' },
     
 ];
 
@@ -16966,6 +16968,12 @@ function calculatePrice() {
 
     if ($('.item_color-deer').val() === 'Black')
         price += ~~$('.color_price').text();
+
+
+
+
+
+
 
 
 
@@ -17198,12 +17206,12 @@ function calculatePrice() {
 
 
 
-    if ($('.item_skull-new-male').val() === 'Falcon')
+    if ($('.item_skull').val() === 'Falcon')
         price += ~~$('.skull_price').text();
 
 
 
-    if ($('.item_skull-new-male').val() === 'Beaver')
+    if ($('.item_skull').val() === 'Beaver')
         price += ~~$('.skull_price').text();
 
 
@@ -17212,37 +17220,37 @@ function calculatePrice() {
 
 
 
-    if ($('.item_hands-new-male').val() === 'Basic + Pair A')
-        price += ~~$('.hands-optional_price').text();
+    if ($('.item_hands').val() === 'Basic + Pair A')
+        price += ~~$('.hands_price').text();
 
 
 
-    if ($('.item_hands-new-male').val() === 'Basic + Pair B')
-        price += ~~$('.hands-optional_price').text();
+    if ($('.item_hands').val() === 'Basic + Pair B')
+        price += ~~$('.hands_price').text();
 
 
 
-    if ($('.item_hands-new-male').val() === 'Basic + Fists')
-        price += ~~$('.hands-optional_price').text();
+    if ($('.item_hands').val() === 'Basic + Fists')
+        price += ~~$('.hands_price').text();
 
 
 
-    if ($('.item_hands-new-male').val() === 'Basic + Pair A + Pair B')
-        price += ~~$('.hands-optional_price').text();
+    if ($('.item_hands').val() === 'Basic + Pair A + Pair B')
+        price += ~~$('.hands_price').text();
 
-    if ($('.item_hands-new-male').val() === 'Basic + Pair A + Pair B')
-        price += ~~$('.hands-optional_price').text();
+    if ($('.item_hands').val() === 'Basic + Pair A + Pair B')
+        price += ~~$('.hands_price').text();
 
 
 
-    if ($('.item_hands-new-male').val() === 'Basic + A + B + Fists')
-        price += ~~$('.hands-optional_price').text();
+    if ($('.item_hands').val() === 'Basic + A + B + Fists')
+        price += ~~$('.hands_price').text();
 
-    if ($('.item_hands-new-male').val() === 'Basic + A + B + Fists')
-        price += ~~$('.hands-optional_price').text();
+    if ($('.item_hands').val() === 'Basic + A + B + Fists')
+        price += ~~$('.hands_price').text();
 
-    if ($('.item_hands-new-male').val() === 'Basic + A + B + Fists')
-        price += ~~$('.hands-optional_price').text();
+    if ($('.item_hands').val() === 'Basic + A + B + Fists')
+        price += ~~$('.hands_price').text();
 
 
 
