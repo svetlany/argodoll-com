@@ -13577,33 +13577,15 @@ const optionLabels = [
 const shippingAreas = new Map([
     
     ['area1', {
-      big:    [40, 50],
-      medium: [25, 40, 42, 45],
-      small:  [20, 25, 32, 40],
+      big:    [70, 120],
+      medium: [50, 70, 70, 120],
+      small:  [20, 40, 50, 70],
     }],
     
     ['area2', {
       big:    [40, 50],
-      medium: [30, 40, 40, 40],
+      medium: [35, 50, 65, 80],
       small:  [20, 30, 35, 40],
-    }],
-    
-    ['area3', {
-      big:    [45, 50],
-      medium: [35, 40, 42, 46],
-      small:  [25, 35, 37, 40],
-    }],
-    
-    ['area4', {
-      big:    [50, 60],
-      medium: [40, 45, 55, 60],
-      small:  [25, 40, 42, 45],
-    }],
-    
-    ['area5', {
-      big:    [70, 100],
-      medium: [45, 65, 90, 110],
-      small:  [25, 45, 55, 65],
     }],
     
 ])
@@ -13666,6 +13648,11 @@ function calculatePrice() {
 
 
 
+
+
+
+    if ($('.item_color').val() === 'Red')
+        price += ~~$('.color_price').text();
 
 
 
