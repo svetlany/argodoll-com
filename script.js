@@ -14000,7 +14000,7 @@ function add_option(options, item, name, label) {
     var itemValue = item.get(name)
     if (itemValue && (itemValue !== 'No') && (itemValue !== 'Нет')) {
         if (options !== '')
-            options += '<br/>';
+            options += '<br>';
         options += label + ': <strong>' + itemValue + '</strong>';
     }
     return options;
